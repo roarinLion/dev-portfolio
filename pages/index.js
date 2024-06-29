@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../components/homepage/Hero'
-import FeaturedPosts from '../components/homepage/FeaturedPosts'
+import Hero from '../components/Homepage/Heros'
+import FeaturedPosts from '../components/Homepage/FeaturedPostss'
 
 const Homepage = () => {
   return (
