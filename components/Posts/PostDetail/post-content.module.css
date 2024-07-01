@@ -1,0 +1,43 @@
+/* 
+  Styles for the main content section.
+  Utilizing CSS variables for consistent spacing, colors, and typography throughout the application.
+*/
+.content {
+    width: 95%; /* Sets the content width to 95% of its parent container */
+    max-width: 60rem; /* Limits the maximum width to 60 rem units for better readability */
+    margin: var(--size-8) auto; /* Adds vertical margin and centers the content horizontally */
+    font-size: var(--size-5); /* Sets the font size using a CSS variable */
+    line-height: var(--size-8); /* Sets the line height using a CSS variable */
+    background-color: var(--color-grey-100); /* Sets the background color using a CSS variable */
+    border-radius: 6px; /* Rounds the corners of the content box */
+    padding: var(--size-4); /* Adds padding inside the content box */
+  }
+  
+  /* 
+    Styles for paragraphs inside the content section.
+    Ensures consistent text color for better readability.
+  */
+  .content p {
+    color: var(--color-grey-800); /* Sets the text color using a CSS variable */
+  }
+  
+  /* 
+    Styles for images inside the content section.
+    Ensures images are centered and have a maximum width.
+  */
+  .content .image {
+    margin: var(--size-4) auto; /* Adds vertical margin and centers the image horizontally */
+    width: 100%; /* Sets the image width to 100% of its parent container */
+    max-width: 600px; /* Limits the maximum width of the image to 600px */
+  }
+  
+  /* 
+    Media query for screens wider than 768px.
+    Adjusts padding for larger screens.
+  */
+  @media (min-width: 768px) {
+    .content {
+      padding: var(--size-8); /* Increases padding for larger screens */
+    }
+  }
+  

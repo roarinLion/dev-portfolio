@@ -1,9 +1,13 @@
+/* 
+  Styles for the grid container.
+  Designed to display a list of items in a responsive grid layout.
+*/
 .grid {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    gap: 1.5rem;
-    align-content: center;
-  }
+  list-style: none; /* Removes default list styling */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: grid; /* Uses CSS Grid Layout */
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* Creates responsive columns */
+  gap: 1.5rem; /* Sets spacing between grid items */
+  align-content: center; /* Centers the content along the block axis */
+}

@@ -1,17 +1,29 @@
+/* 
+  Styles for the main posts container.
+  Ensuring proper width, margin, and responsiveness.
+*/
 .posts {
-    width: 90%;
-    max-width: 60rem;
-    margin: var(--size-8) auto;
-  }
-  
+  width: 90%; /* Sets the width to 90% of the parent container */
+  max-width: 60rem; /* Limits the maximum width to 60 rem units for better readability */
+  margin: var(--size-8) auto; /* Adds vertical margin and centers the container horizontally */
+}
+
+/* 
+  Styles for the h1 heading within the posts container.
+  Ensuring consistent typography and alignment.
+*/
+.posts h1 {
+  font-size: var(--size-8); /* Sets the font size using a CSS variable */
+  color: var(--color-grey-800); /* Sets the text color using a CSS variable */
+  text-align: center; /* Centers the text */
+}
+
+/* 
+  Media query for screens wider than 768px.
+  Adjusts the font size for larger screens.
+*/
+@media (min-width: 768px) {
   .posts h1 {
-    font-size: var(--size-8);
-    color: var(--color-grey-800);
-    text-align: center;
+    font-size: var(--size-16); /* Increases the font size for larger screens */
   }
-  
-  @media (min-width: 768px) {
-    .posts h1 {
-      font-size: var(--size-16);
-    }
-  }
+}

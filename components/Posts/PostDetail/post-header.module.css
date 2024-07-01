@@ -1,0 +1,54 @@
+/* 
+  Styles for the header section of the post.
+  Utilizing CSS variables for consistent spacing and colors throughout the application.
+*/
+.header {
+    padding-bottom: var(--size-8); /* Adds space at the bottom of the header */
+    border-bottom: 8px solid var(--color-primary-100); /* Adds a bottom border with primary color */
+    margin: var(--size-4) 0; /* Adds vertical margin */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column-reverse; /* Stacks children in reverse column order */
+    justify-content: space-between; /* Distributes space between children */
+    align-items: center; /* Centers children horizontally */
+    gap: 1rem; /* Adds space between children */
+  }
+  
+  /* 
+    Styles for the header's title (h1).
+    Ensures consistent font size, color, and spacing.
+  */
+  .header h1 {
+    font-size: var(--size-8); /* Sets font size */
+    color: var(--color-primary-500); /* Sets text color */
+    margin: 0; /* Removes default margin */
+    line-height: initial; /* Uses initial line height */
+    text-align: center; /* Centers text */
+  }
+  
+  /* 
+    Styles for the image inside the header.
+    Ensures it fits well within its container.
+  */
+  .header img {
+    object-fit: cover; /* Ensures the image covers its container without distortion */
+    width: 200px; /* Sets fixed width */
+    height: 120px; /* Sets fixed height */
+  }
+  
+  /* 
+    Media query for screens wider than 768px.
+    Adjusts layout and font sizes for larger screens.
+  */
+  @media (min-width: 768px) {
+    .header {
+      margin: var(--size-8) 0; /* Increases vertical margin */
+      flex-direction: row; /* Stacks children in a row */
+      align-items: flex-end; /* Aligns children at the bottom */
+    }
+  
+    .header h1 {
+      font-size: var(--size-16); /* Increases font size */
+      text-align: left; /* Aligns text to the left */
+    }
+  }
+  

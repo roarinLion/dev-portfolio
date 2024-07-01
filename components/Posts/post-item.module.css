@@ -1,37 +1,69 @@
+/* 
+  Styles for the individual post item.
+  Ensuring a visually appealing and accessible design.
+*/
 .post {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    background-color: var(--color-grey-800);
-    text-align: center;
-  }
-  
-  .post a {
-    color: var(--color-grey-100);
-  }
-  
-  .image {
-    width: 100%;
-    max-height: 20rem;
-    overflow: hidden;
-  }
-  
-  .image img {
-    object-fit: cover;
-  }
-  
-  .content {
-    padding: var(--size-4);
-  }
-  
-  .content h3 {
-    margin: var(--size-2) 0;
-    font-size: var(--size-6);
-  }
-  
-  .content time {
-    font-style: italic;
-    color: var(--color-grey-300);
-  }
-  
-  .content p {
-    line-height: var(--size-6);
-  }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  background-color: var(--color-grey-800); /* Sets the background color using a CSS variable */
+  text-align: center; /* Centers the text content */
+}
+
+/* 
+  Styles for links within the post.
+  Ensuring good contrast and readability.
+*/
+.post a {
+  color: var(--color-grey-100); /* Sets link color using a CSS variable */
+}
+
+/* 
+  Styles for the image container within the post.
+  Ensuring the image fits well and does not overflow.
+*/
+.image {
+  width: 100%; /* Sets the image container width to 100% */
+  max-height: 20rem; /* Limits the maximum height of the image container */
+  overflow: hidden; /* Hides overflow to ensure the image does not spill out */
+}
+
+/* 
+  Styles for images within the image container.
+  Ensuring the image covers the container without distortion.
+*/
+.image img {
+  object-fit: cover; /* Ensures the image covers its container */
+}
+
+/* 
+  Styles for the content section within the post.
+  Ensuring proper padding and spacing.
+*/
+.content {
+  padding: var(--size-4); /* Adds padding inside the content box */
+}
+
+/* 
+  Styles for the post title (h3) within the content section.
+  Ensuring proper spacing and font size.
+*/
+.content h3 {
+  margin: var(--size-2) 0; /* Adds vertical margin */
+  font-size: var(--size-6); /* Sets the font size using a CSS variable */
+}
+
+/* 
+  Styles for the time element within the content section.
+  Using italics for styling and setting a specific text color.
+*/
+.content time {
+  font-style: italic; /* Sets the font style to italic */
+  color: var(--color-grey-300); /* Sets the text color using a CSS variable */
+}
+
+/* 
+  Styles for paragraphs within the content section.
+  Ensuring proper line height for readability.
+*/
+.content p {
+  line-height: var(--size-6); /* Sets the line height using a CSS variable */
+}
